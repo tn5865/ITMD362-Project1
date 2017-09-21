@@ -5,9 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="screen.css" />
+  <script src="script.js"></script>
 </head>
 <body>
-  <form action="#null" method="get" autocomplete="on">
+  <form action="#null" method="get" autocomplete="on" onsubmit="submitForm();">
     <h1 id="header">Daily Joke Subscription!</h1>
     <p class="description">
       Sign up to receive a joke everyday!
@@ -17,21 +18,20 @@
     </p>
     <fieldset>
       <p>
-        <label for="name">Name</label>
-        <input type="text" name="first_name" id="name" placeholder="First name" autocomplete=="given-name">
-        <input type="text" name="last_name" id="name" placeholder="Last name" autocomplete=="family-name">
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" placeholder="First Last" id="full_name" name="user_name" required autocomplete="name">
       </p>
       <p>
         <label for="mail">Email Address:</label>
-        <input type="email" placeholder="JohnDoe@gmail.com" id="email" name="user_email">
+        <input type="email" placeholder="JohnDoe@gmail.com" id="email" name="user_email" required autocomplete="email">
       </p>
       <p>
         <label for="phone_field">Phone Number:</label>
-        <input type="tel" name="phone_field" placeholder="XXX-XXX-XXX" id="telphone" name="user_phone">
+        <input type="tel" name="phone_field" placeholder="XXX-XXX-XXX" id="telephone" name="user_phone" required autocomplete="tel">
       </p>
       <p>
         <label for="birthday_field">Date Of Birth:</label>
-        <input type="date" name="bday" placeholder="mm/dd/yyyy" id="birthdate" name="user_dob">
+        <input type="date" name="bday" placeholder="mm/dd/yyyy" id="birthdate" name="user_dob" required>
       </p>
       <p id="submit">
         <input type="submit" value="Submit">
