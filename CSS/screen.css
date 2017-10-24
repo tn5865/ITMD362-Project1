@@ -224,7 +224,7 @@ textarea {
 
 body {
   font-family: "Comic Sans MS", cursive, sans-serif;
-  background-image: url(smiley.jpg);
+  background-image: url(../Images/smiley.jpg);
   background-repeat: repeat;
   font-size: 100%;
 }
