@@ -226,7 +226,8 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif;
   background-image: url(../Images/smiley.jpg);
   background-repeat: repeat;
-  font-size: 100%;
+  font-size: 2.5em; /* 300%/120% = 2.5em */ /* 40px/16px = 2.5em */
+  line-height: 1.75em; /* 28/16px = 1.75em */
 }
 
 h1 {
@@ -234,24 +235,24 @@ h1 {
 }
 
 form {
-  max-width: 350px;
-  margin: 10px auto;
-  padding: 10px 20px;
+  max-width: 21.875em; /* 350px/16px = 21.875em */
+  margin: 0.625em auto;	/* 10px/16px = 0.625em */
+  padding: 0.625em 1.25em; /* 10px/16px = 0.625em, 20px/16px = 1.25em */
   background: #FFFFFF;
-  border-radius: 8px;
+  border-radius: 0.5em; /* 8/16px = .5em */
   background-color: #FFD700;
 }
 
 #header {
-  font-size: 180%;
+  font-size: 1.5em;
   font-weight: bold;
   text-align: center;
 }
 
 .description {
-  font-size: 125%;
+  font-size: 1.083em;
   text-align: center;
-  margin: 10px 10px 10px 10px;
+  margin: 0.625em 0.625em 0.625em 0.625em;
 }
 
 fieldset {
@@ -260,8 +261,8 @@ fieldset {
 
 label {
   display: block;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0.375em; /* 6px/16px = 0.375px */
+  padding-bottom: 0.375em; /* 6px/16px = 0.375px */
 }
 
 input {
@@ -270,8 +271,8 @@ input {
 }
 
 #submit {
-  padding-top: 10px;
-  font-size: 110%;
+  padding-top: 0.625em;
+  font-size: 0.916em; /* 100%/120% = 0.916em */
 }
 
 input[type="submit"] {
@@ -281,15 +282,15 @@ input[type="submit"] {
   font-weight: bold;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 30em) {
   body {
-	font-size: 115%;
+	font-size: 0.958em;
   }
   form {
-  max-width: 480px;
+  max-width: 30em; /* 480px/16px = 30em */
   }
   #header {
-	font-size: 190%;
+	font-size: 1.6em;
     font-weight: bold;
     text-align: center;
   }
@@ -297,24 +298,27 @@ input[type="submit"] {
 	display: block;
   }
   #submit {
-	font-size: 120%;
+	font-size: 1em;
   }
 }  
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   body {
-    font-size: 135%;
+    font-size: 1.125em; /* 135%/120% = 1.125em */ /* 18px/16px = 1.125em */
+  }
+  .description {
+	font-size: 1.4em;
   }
   form {
-	max-width: 768px;
+	max-width: 45em; /* 720px/16px = 45em */
   }
   #header {
-    font-size: 260%;
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
   }
   #submit {
-	font-size: 135%;
+	font-size: 1.35em;
   }
 }
 	
